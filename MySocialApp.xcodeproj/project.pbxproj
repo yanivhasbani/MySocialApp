@@ -16,6 +16,12 @@
 		791989781F065A1A00C846EA /* MySocialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791989771F065A1A00C846EA /* MySocialAppTests.swift */; };
 		791989831F065A1A00C846EA /* MySocialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791989821F065A1A00C846EA /* MySocialAppUITests.swift */; };
 		791989951F065A8400C846EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 791989941F065A8400C846EA /* GoogleService-Info.plist */; };
+		79CF1FE21F1BAC2300573202 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FE11F1BAC2300573202 /* UIView+Shadow.swift */; };
+		79CF1FE51F1BAC8500573202 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FE41F1BAC8500573202 /* Consts.swift */; };
+		79CF1FE81F1BB2E300573202 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FE71F1BB2E300573202 /* HeaderView.swift */; };
+		79CF1FEA1F1BB84C00573202 /* UIView+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FE91F1BB84C00573202 /* UIView+RoundedCorner.swift */; };
+		79CF1FEC1F1BBA4C00573202 /* FBRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FEB1F1BBA4C00573202 /* FBRoundedButton.swift */; };
+		79CF1FF01F1BBFDA00573202 /* SignInTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF1FEF1F1BBFDA00573202 /* SignInTextFiled.swift */; };
 		7B455528373D0D30A70F22FC /* Pods_MySocialAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9471B3EF2CC8E42F9F4610 /* Pods_MySocialAppUITests.framework */; };
 		F56ACEDBB8731BE842186098 /* Pods_MySocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317D302B00DC71C7CBF39FB /* Pods_MySocialApp.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +63,12 @@
 		791989821F065A1A00C846EA /* MySocialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySocialAppUITests.swift; sourceTree = "<group>"; };
 		791989841F065A1A00C846EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		791989941F065A8400C846EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		79CF1FE11F1BAC2300573202 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		79CF1FE41F1BAC8500573202 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		79CF1FE71F1BB2E300573202 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		79CF1FE91F1BB84C00573202 /* UIView+RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorner.swift"; sourceTree = "<group>"; };
+		79CF1FEB1F1BBA4C00573202 /* FBRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBRoundedButton.swift; sourceTree = "<group>"; };
+		79CF1FEF1F1BBFDA00573202 /* SignInTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTextFiled.swift; sourceTree = "<group>"; };
 		7C9C9D081072DB7197FFB62A /* Pods-MySocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySocialApp/Pods-MySocialApp.release.xcconfig"; sourceTree = "<group>"; };
 		87BE33DB052037D9E129CF60 /* Pods_MySocialAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocialAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9471B3EF2CC8E42F9F4610 /* Pods_MySocialAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocialAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +128,8 @@
 		791989611F065A1A00C846EA /* MySocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				79CF1FE61F1BB1B000573202 /* Extensions */,
+				79CF1FE31F1BAC7300573202 /* Utils */,
 				791989931F065A7400C846EA /* Resources */,
 				791989921F065A7000C846EA /* Model */,
 				791989911F065A6A00C846EA /* Controller */,
@@ -147,6 +161,9 @@
 			children = (
 				791989661F065A1A00C846EA /* Main.storyboard */,
 				7919896B1F065A1A00C846EA /* LaunchScreen.storyboard */,
+				79CF1FE71F1BB2E300573202 /* HeaderView.swift */,
+				79CF1FEB1F1BBA4C00573202 /* FBRoundedButton.swift */,
+				79CF1FEF1F1BBFDA00573202 /* SignInTextFiled.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +192,23 @@
 				791989691F065A1A00C846EA /* Assets.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		79CF1FE31F1BAC7300573202 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79CF1FE41F1BAC8500573202 /* Consts.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		79CF1FE61F1BB1B000573202 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79CF1FE11F1BAC2300573202 /* UIView+Shadow.swift */,
+				79CF1FE91F1BB84C00573202 /* UIView+RoundedCorner.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		7CF08497A107DE87CCADEBD0 /* Pods */ = {
@@ -485,8 +519,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CF1FE81F1BB2E300573202 /* HeaderView.swift in Sources */,
+				79CF1FF01F1BBFDA00573202 /* SignInTextFiled.swift in Sources */,
 				791989651F065A1A00C846EA /* SignInVC.swift in Sources */,
+				79CF1FE51F1BAC8500573202 /* Consts.swift in Sources */,
+				79CF1FEA1F1BB84C00573202 /* UIView+RoundedCorner.swift in Sources */,
+				79CF1FEC1F1BBA4C00573202 /* FBRoundedButton.swift in Sources */,
 				791989631F065A1A00C846EA /* AppDelegate.swift in Sources */,
+				79CF1FE21F1BAC2300573202 /* UIView+Shadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

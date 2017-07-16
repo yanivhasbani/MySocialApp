@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-E1-wOP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-E1-wOP" customClass="HeaderView" customModule="MySocialApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="lVG-s3-7Vx">
@@ -39,12 +39,15 @@
                                     <constraint firstItem="lVG-s3-7Vx" firstAttribute="centerX" secondItem="rWd-E1-wOP" secondAttribute="centerX" id="e4H-5r-FOa"/>
                                     <constraint firstItem="lVG-s3-7Vx" firstAttribute="centerY" secondItem="rWd-E1-wOP" secondAttribute="centerY" id="xrK-qz-QvW"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX9-Yr-3vY">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an accoutn will be created for you automatically" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-6B-eI1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                        <rect key="frame" x="8" y="0.0" width="359" height="67"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -52,9 +55,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="t4M-6B-eI1" secondAttribute="trailing" id="0k2-5H-bpg"/>
-                                    <constraint firstItem="t4M-6B-eI1" firstAttribute="leading" secondItem="eX9-Yr-3vY" secondAttribute="leading" id="Ask-bS-vlo"/>
-                                    <constraint firstAttribute="bottom" secondItem="t4M-6B-eI1" secondAttribute="bottom" id="jXp-c0-HBM"/>
+                                    <constraint firstAttribute="trailing" secondItem="t4M-6B-eI1" secondAttribute="trailing" constant="8" id="0k2-5H-bpg"/>
+                                    <constraint firstItem="t4M-6B-eI1" firstAttribute="leading" secondItem="eX9-Yr-3vY" secondAttribute="leading" constant="8" id="Ask-bS-vlo"/>
+                                    <constraint firstAttribute="bottom" secondItem="t4M-6B-eI1" secondAttribute="bottom" constant="8" id="jXp-c0-HBM"/>
                                     <constraint firstItem="t4M-6B-eI1" firstAttribute="top" secondItem="eX9-Yr-3vY" secondAttribute="top" id="lVK-qC-ybX"/>
                                     <constraint firstAttribute="height" constant="75" id="zkS-M2-jve"/>
                                 </constraints>
@@ -65,7 +68,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trE-h9-HPI">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trE-h9-HPI" customClass="FBRoundedButton" customModule="MySocialApp" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="230.5" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.32941176470588235" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -73,19 +76,23 @@
                                     <constraint firstAttribute="height" constant="150" id="zsD-nG-Xjm"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowDesign" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-kX-2W3">
                                 <rect key="frame" x="46" y="420.5" width="283" height="127"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-jJ-zKg">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-jJ-zKg" customClass="SignInTextFiled" customModule="MySocialApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-jb-CaA">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-jb-CaA" customClass="SignInTextFiled" customModule="MySocialApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -96,6 +103,10 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowDesign" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorners" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -119,6 +130,10 @@
                             <constraint firstItem="CmD-e6-MNP" firstAttribute="top" secondItem="rWd-E1-wOP" secondAttribute="bottom" constant="20" id="u8o-M4-dRn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Qhw-jJ-zKg" id="oW6-3u-pVN"/>
+                        <outlet property="passwordTextField" destination="YUm-jb-CaA" id="O0B-M5-9Nz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
